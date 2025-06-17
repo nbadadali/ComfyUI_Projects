@@ -1,0 +1,251 @@
+{
+    "last_node_id": 14,
+    "last_link_id": 13,
+    "nodes": [
+        {
+            "id": 11,
+            "type": "LoadImage",
+            "pos": [
+                228.73780822753906,
+                313.9390869140625
+            ],
+            "size": [
+                315,
+                314
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        10
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "skete.jpeg",
+                "image"
+            ]
+        },
+        {
+            "id": 14,
+            "type": "PreviewImage",
+            "pos": [
+                1214.9942626953125,
+                380.585205078125
+            ],
+            "size": [
+                403.7344970703125,
+                514.972900390625
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 13
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "PreviewImage"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 10,
+            "type": "ImageCompositeMasked",
+            "pos": [
+                705.7951049804688,
+                391.05029296875
+            ],
+            "size": [
+                315,
+                146
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "destination",
+                    "type": "IMAGE",
+                    "link": 10
+                },
+                {
+                    "name": "source",
+                    "type": "IMAGE",
+                    "link": 11
+                },
+                {
+                    "name": "mask",
+                    "type": "MASK",
+                    "shape": 7,
+                    "link": 12
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        13
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "ImageCompositeMasked"
+            },
+            "widgets_values": [
+                0,
+                10,
+                true
+            ]
+        },
+        {
+            "id": 12,
+            "type": "LoadImage",
+            "pos": [
+                228.73793029785156,
+                718.3836059570312
+            ],
+            "size": [
+                315,
+                314
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        11
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "gettyimages-1227089656-612x612.jpg",
+                "image"
+            ]
+        },
+        {
+            "id": 13,
+            "type": "LoadImage",
+            "pos": [
+                714.2933959960938,
+                650.8836669921875
+            ],
+            "size": [
+                315,
+                314
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": null
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": [
+                        12
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "clipspace/clipspace-mask-50674.299999952316.png [input]",
+                "image"
+            ]
+        }
+    ],
+    "links": [
+        [
+            10,
+            11,
+            0,
+            10,
+            0,
+            "IMAGE"
+        ],
+        [
+            11,
+            12,
+            0,
+            10,
+            1,
+            "IMAGE"
+        ],
+        [
+            12,
+            13,
+            1,
+            10,
+            2,
+            "MASK"
+        ],
+        [
+            13,
+            10,
+            0,
+            14,
+            0,
+            "IMAGE"
+        ]
+    ],
+    "groups": [],
+    "config": {},
+    "extra": {
+        "ds": {
+            "scale": 0.7513148009015774,
+            "offset": [
+                -274.42110934870624,
+                -315.1675858033802
+            ]
+        }
+    },
+    "version": 0.4
+}

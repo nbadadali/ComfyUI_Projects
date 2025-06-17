@@ -1,0 +1,226 @@
+[
+  {
+    "name": "segment anything",
+    "url": "https://github.com/storyicon/comfyui_segment_anything",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "storyicon",
+      "title": "segment anything",
+      "id": "sam",
+      "reference": "https://github.com/storyicon/comfyui_segment_anything",
+      "files": [
+        "https://github.com/storyicon/comfyui_segment_anything"
+      ],
+      "install_type": "git-clone",
+      "description": "Based on GroundingDino and SAM, use semantic strings to segment any element in an image. The comfyui version of sd-webui-segment-anything."
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI's ControlNet Auxiliary Preprocessors",
+    "url": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Fannovel16",
+      "title": "ComfyUI's ControlNet Auxiliary Preprocessors",
+      "id": "comfyui_controlnet_aux",
+      "reference": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+      "files": [
+        "https://github.com/Fannovel16/comfyui_controlnet_aux"
+      ],
+      "preemptions": [
+        "AIO_Preprocessor",
+        "AnimalPosePreprocessor",
+        "AnimeFace_SemSegPreprocessor",
+        "AnimeLineArtPreprocessor",
+        "BAE-NormalMapPreprocessor",
+        "BinaryPreprocessor",
+        "CannyEdgePreprocessor",
+        "ColorPreprocessor",
+        "DSINE-NormalMapPreprocessor",
+        "DWPreprocessor",
+        "DensePosePreprocessor",
+        "DepthAnythingPreprocessor",
+        "DiffusionEdge_Preprocessor",
+        "FacialPartColoringFromPoseKps",
+        "FakeScribblePreprocessor",
+        "HEDPreprocessor",
+        "HintImageEnchance",
+        "ImageGenResolutionFromImage",
+        "ImageGenResolutionFromLatent",
+        "ImageIntensityDetector",
+        "ImageLuminanceDetector",
+        "InpaintPreprocessor",
+        "LeReS-DepthMapPreprocessor",
+        "LineArtPreprocessor",
+        "LineartStandardPreprocessor",
+        "M-LSDPreprocessor",
+        "Manga2Anime_LineArt_Preprocessor",
+        "MaskOptFlow",
+        "MediaPipe-FaceMeshPreprocessor",
+        "MeshGraphormer-DepthMapPreprocessor",
+        "MiDaS-DepthMapPreprocessor",
+        "MiDaS-NormalMapPreprocessor",
+        "OneFormer-ADE20K-SemSegPreprocessor",
+        "OneFormer-COCO-SemSegPreprocessor",
+        "OpenposePreprocessor",
+        "PiDiNetPreprocessor",
+        "PixelPerfectResolution",
+        "SAMPreprocessor",
+        "SavePoseKpsAsJsonFile",
+        "ScribblePreprocessor",
+        "Scribble_XDoG_Preprocessor",
+        "SemSegPreprocessor",
+        "ShufflePreprocessor",
+        "TEEDPreprocessor",
+        "TilePreprocessor",
+        "UniFormer-SemSegPreprocessor",
+        "Unimatch_OptFlowPreprocessor",
+        "Zoe-DepthMapPreprocessor",
+        "Zoe_DepthAnythingPreprocessor"
+      ],
+      "install_type": "git-clone",
+      "description": "Plug-and-play ComfyUI node sets for making ControlNet hint images."
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI Essentials",
+    "url": "https://github.com/cubiq/ComfyUI_essentials",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "cubiq",
+      "title": "ComfyUI Essentials",
+      "id": "essentials",
+      "reference": "https://github.com/cubiq/ComfyUI_essentials",
+      "files": [
+        "https://github.com/cubiq/ComfyUI_essentials"
+      ],
+      "install_type": "git-clone",
+      "description": "Essential nodes that are weirdly missing from ComfyUI core. With few exceptions they are new features and not commodities. I hope this will be just a temporary repository until the nodes get included into ComfyUI."
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-IC-Light",
+    "url": "https://github.com/kijai/ComfyUI-IC-Light",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "kijai",
+      "title": "ComfyUI-IC-Light",
+      "id": "ic-light-kijai",
+      "reference": "https://github.com/kijai/ComfyUI-IC-Light",
+      "files": [
+        "https://github.com/kijai/ComfyUI-IC-Light"
+      ],
+      "install_type": "git-clone",
+      "description": "ComfyUI native nodes for IC-Light"
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
+  },
+  {
+    "name": "WAS Node Suite",
+    "url": "https://github.com/WASasquatch/was-node-suite-comfyui",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "WASasquatch",
+      "title": "WAS Node Suite",
+      "id": "was",
+      "reference": "https://github.com/WASasquatch/was-node-suite-comfyui",
+      "pip": [
+        "numba"
+      ],
+      "files": [
+        "https://github.com/WASasquatch/was-node-suite-comfyui"
+      ],
+      "install_type": "git-clone",
+      "description": "A node suite for ComfyUI with many new nodes, such as image processing, text processing, and more."
+    },
+    "nodes": [],
+    "pip": [
+      "numba"
+    ],
+    "apt": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-Image-Filters",
+    "url": "https://github.com/spacepxl/ComfyUI-Image-Filters",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "spacepxl",
+      "title": "ComfyUI-Image-Filters",
+      "id": "image-fitlers",
+      "reference": "https://github.com/spacepxl/ComfyUI-Image-Filters",
+      "files": [
+        "https://github.com/spacepxl/ComfyUI-Image-Filters"
+      ],
+      "install_type": "git-clone",
+      "description": "Image and matte filtering nodes for ComfyUI `image/filters/*`"
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI Layer Style",
+    "url": "https://github.com/chflame163/ComfyUI_LayerStyle",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "chflame163",
+      "title": "ComfyUI Layer Style",
+      "id": "layerstyle",
+      "reference": "https://github.com/chflame163/ComfyUI_LayerStyle",
+      "files": [
+        "https://github.com/chflame163/ComfyUI_LayerStyle"
+      ],
+      "install_type": "git-clone",
+      "description": "A set of nodes for ComfyUI it generate image like Adobe Photoshop's Layer Style. the Drop Shadow is first completed node, and follow-up work is in progress."
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
+  },
+  {
+    "name": "Character Face Swap",
+    "url": "https://github.com/ArtBot2023/CharacterFaceSwap",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "ArtBot2023",
+      "title": "Character Face Swap",
+      "id": "char-faceswap",
+      "reference": "https://github.com/ArtBot2023/CharacterFaceSwap",
+      "files": [
+        "https://github.com/ArtBot2023/CharacterFaceSwap"
+      ],
+      "install_type": "git-clone",
+      "description": "Character face swap with LoRA and embeddings."
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
+  }
+]

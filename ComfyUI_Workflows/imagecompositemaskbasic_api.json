@@ -1,0 +1,67 @@
+{
+    "10": {
+        "inputs": {
+            "x": 0,
+            "y": 10,
+            "resize_source": true,
+            "destination": [
+                "11",
+                0
+            ],
+            "source": [
+                "12",
+                0
+            ],
+            "mask": [
+                "13",
+                1
+            ]
+        },
+        "class_type": "ImageCompositeMasked",
+        "_meta": {
+            "title": "ImageCompositeMasked"
+        }
+    },
+    "11": {
+        "inputs": {
+            "image": "skete.jpeg",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "12": {
+        "inputs": {
+            "image": "gettyimages-1227089656-612x612.jpg",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "13": {
+        "inputs": {
+            "image": "clipspace/clipspace-mask-50674.299999952316.png [input]",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "14": {
+        "inputs": {
+            "images": [
+                "10",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    }
+}

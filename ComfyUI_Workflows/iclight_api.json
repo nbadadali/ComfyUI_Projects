@@ -1,0 +1,188 @@
+{
+    "3": {
+        "inputs": {
+            "seed": 188522486443257,
+            "steps": 20,
+            "cfg": 8,
+            "sampler_name": "euler",
+            "scheduler": "normal",
+            "denoise": 1,
+            "model": [
+                "15",
+                0
+            ],
+            "positive": [
+                "10",
+                0
+            ],
+            "negative": [
+                "10",
+                1
+            ],
+            "latent_image": [
+                "14",
+                0
+            ]
+        },
+        "class_type": "KSampler",
+        "_meta": {
+            "title": "KSampler"
+        }
+    },
+    "4": {
+        "inputs": {
+            "ckpt_name": "epicrealism_naturalSinRC1VAE.safetensors"
+        },
+        "class_type": "CheckpointLoaderSimple",
+        "_meta": {
+            "title": "Load Checkpoint"
+        }
+    },
+    "6": {
+        "inputs": {
+            "text": "spot light",
+            "clip": [
+                "4",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "7": {
+        "inputs": {
+            "text": "text, watermark",
+            "clip": [
+                "4",
+                1
+            ]
+        },
+        "class_type": "CLIPTextEncode",
+        "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+        }
+    },
+    "8": {
+        "inputs": {
+            "samples": [
+                "3",
+                0
+            ],
+            "vae": [
+                "4",
+                2
+            ]
+        },
+        "class_type": "VAEDecode",
+        "_meta": {
+            "title": "VAE Decode"
+        }
+    },
+    "9": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "8",
+                0
+            ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
+        }
+    },
+    "10": {
+        "inputs": {
+            "multiplier": 0.18215,
+            "positive": [
+                "6",
+                0
+            ],
+            "negative": [
+                "7",
+                0
+            ],
+            "vae": [
+                "4",
+                2
+            ],
+            "foreground": [
+                "13",
+                0
+            ]
+        },
+        "class_type": "ICLightConditioning",
+        "_meta": {
+            "title": "IC-Light Conditioning"
+        }
+    },
+    "11": {
+        "inputs": {
+            "image": "clipspace/clipspace-mask-1298623.8000000715.png [input]",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "12": {
+        "inputs": {
+            "mask": [
+                "11",
+                1
+            ]
+        },
+        "class_type": "MaskToImage",
+        "_meta": {
+            "title": "Convert Mask to Image"
+        }
+    },
+    "13": {
+        "inputs": {
+            "pixels": [
+                "11",
+                0
+            ],
+            "vae": [
+                "4",
+                2
+            ]
+        },
+        "class_type": "VAEEncode",
+        "_meta": {
+            "title": "VAE Encode"
+        }
+    },
+    "14": {
+        "inputs": {
+            "pixels": [
+                "12",
+                0
+            ],
+            "vae": [
+                "4",
+                2
+            ]
+        },
+        "class_type": "VAEEncode",
+        "_meta": {
+            "title": "VAE Encode"
+        }
+    },
+    "15": {
+        "inputs": {
+            "model_path": "IC-Light/iclight_sd15_fc.safetensors",
+            "model": [
+                "4",
+                0
+            ]
+        },
+        "class_type": "LoadAndApplyICLightUnet",
+        "_meta": {
+            "title": "Load And Apply IC-Light"
+        }
+    }
+}

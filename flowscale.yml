@@ -1,0 +1,139 @@
+version: 0
+models: models.json
+custom_nodes: custom_nodes.json
+user_models: user_models.json
+user_custom_nodes: user_custom_nodes.json
+workflows:
+  - id: bi1hscocd3e
+    name: image-to-image_api.json
+    file: ComfyUI_Workflows/image-to-image_api.json
+    version: .nan
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+  - id: tqnlh1e74u
+    name: basic-lora-workflow_api.json
+    file: ComfyUI_Workflows/basic-lora-workflow_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+  - id: 91jh7jlohwh
+    name: inpanting_api.json
+    file: ComfyUI_Workflows/inpanting_api.json
+    version: .nan
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+  - id: 4zzb7le2ua4
+    name: outpainting_api.json
+    file: ComfyUI_Workflows/outpainting_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+  - id: drkgmgwvq6e
+    name: segment_api.json
+    file: ComfyUI_Workflows/segment_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+  - id: lvjx0xiy208
+    name: controlnet-depthanything_api.json
+    file: ComfyUI_Workflows/controlnet-depthanything_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+  - id: u0o0aty5ofo
+    name: productphotography_api.json
+    file: ComfyUI_Workflows/productphotography_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+  - id: w9rnqgjjhgr
+    name: imagecompositemaskbasic_api.json
+    file: ComfyUI_Workflows/imagecompositemaskbasic_api.json
+    version: 1
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+  - id: 9nyg5k0gn6
+    name: iclight_api.json
+    file: ComfyUI_Workflows/iclight_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+  - id: 7d2snpzd1vt
+    name: productphotoshoot_advanced_pa1_api.json
+    file: ComfyUI_Workflows/productphotoshoot_advanced_pa1_api.json
+    version: 2
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+  - id: fii4uzgbrx
+    name: modelphotoshootadvanced_api.json
+    file: ComfyUI_Workflows/modelphotoshootadvanced_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+normal_workflows:
+  - id: kn3gqmgcwo
+    name: image-to-image.json
+    file: ComfyUI_Workflows/image-to-image.json
+    version: .nan
+  - id: 0pep5feomlrm
+    name: basic-lora-workflow.json
+    file: ComfyUI_Workflows/basic-lora-workflow.json
+    version: 0
+  - id: 9ftva5zzlcq
+    name: inpanting.json
+    file: ComfyUI_Workflows/inpanting.json
+    version: .nan
+  - id: rxv5f3w009
+    name: outpainting.json
+    file: ComfyUI_Workflows/outpainting.json
+    version: 0
+  - id: tznc29dsie8
+    name: segment.json
+    file: ComfyUI_Workflows/segment.json
+    version: 0
+  - id: ti93awkqydm
+    name: controlnet-depthanything.json
+    file: ComfyUI_Workflows/controlnet-depthanything.json
+    version: 0
+  - id: 252rdfygfb3
+    name: productphotography.json
+    file: ComfyUI_Workflows/productphotography.json
+    version: 0
+  - id: hbxfyznrcn7
+    name: imagecompositemaskbasic.json
+    file: ComfyUI_Workflows/imagecompositemaskbasic.json
+    version: 1
+  - id: jdko0q0c89
+    name: iclight.json
+    file: ComfyUI_Workflows/iclight.json
+    version: 0
+  - id: da9gpbcpvx4
+    name: productphotoshoot_advanced_pa1.json
+    file: ComfyUI_Workflows/productphotoshoot_advanced_pa1.json
+    version: 2
+  - id: vg2mc7zgsj9
+    name: modelphotoshootadvanced.json
+    file: ComfyUI_Workflows/modelphotoshootadvanced.json
+    version: 0
